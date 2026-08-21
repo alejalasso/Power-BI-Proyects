@@ -139,7 +139,7 @@ The solution follows an MRP-style data model where material demand is driven by 
 
 The model uses the following logical tables:
 
-#### Materials / Inventory
+#### Materials
 
 Contains the master data for each material, including:
 
