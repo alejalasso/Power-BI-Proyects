@@ -141,56 +141,20 @@ The model uses the following logical tables:
 
 #### Materials
 
-Contains the master data for each material, including:
-
-- Material ID
-- Material description
-- Category
-- Unit of measurement
-- Supplier
-- Supplier lead time
-- Unit cost
+Contains the master data for each material, including lead time.
 
 #### Bill of Materials — BOM
 
 Defines the quantity of each material required to manufacture a specific quantity of product.
 
-Typical fields include:
-
-- Product ID
-- Material ID
-- Base product quantity
-- Material quantity
-- Unit of measurement
-
 #### Production Orders
 
 Contains the production schedule and represents the demand driver of the model.
-
-Typical fields include:
-
-- Production Order ID
-- Product ID
-- Production units
-- Manufacture date
-- Production order status
-
 Closed production orders are used to calculate historical material consumption, while open production orders generate future material requirements.
 
 #### Purchase Orders
 
 Contains material procurement transactions.
-
-Typical fields include:
-
-- Purchase Order ID
-- Material ID
-- Quantity
-- Purchase date
-- Estimated delivery date
-- Actual delivery date
-- Status
-
 Delivered purchase orders increase current inventory, while open purchase orders are evaluated as in-transit supply.
 
 ---
@@ -212,3 +176,8 @@ Bill of Materials
         |
         v
 Material Requirement by Production Order
+```
+
+### Model
+
+![Model](Model.png)
