@@ -61,13 +61,13 @@ The solution follows a **star-schema-inspired analytical model**.
 * **`Micro_Monitoring`**
   Contains microbiological monitoring results, dates, rooms, CFU counts, and Deep Cleaning identifiers.
 
-* **`Environment_Hourly`**
+* **`DimEnvironment_Hourly`**
   Contains temperature and relative humidity measurements by room and hour.
 
-* **`MicroMonitoring_Points`**
+* **`DimMicroMonitoring_Points`**
   Contains monitoring-point attributes such as room, cleanroom class, sampling type, process area, and X/Y coordinates.
 
-* **`Specifications`**
+* **`DimSpecifications`**
   Contains microbiological acceptance limits by cleanroom classification and sampling type.
 
 * **`DimDate`**
