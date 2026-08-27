@@ -22,7 +22,7 @@ The objective is to transform inventory data into an actionable planning tool th
 
 <video controls width="100%">
   <source src="./control_panel.mp4" type="video/mp4">
-</video>
+  
 ---
 
 ## 2. What the Model Does
