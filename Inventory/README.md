@@ -20,6 +20,9 @@ This dashboard was designed to answer key planning questions such as:
 
 The objective is to transform inventory data into an actionable planning tool that supports procurement, inventory control, and production planning decisions.
 
+<video controls width="100%">
+  <source src="./Inventory control panel 2.mp4" type="video/mp4">
+
 ---
 
 ## 2. What the Model Does
