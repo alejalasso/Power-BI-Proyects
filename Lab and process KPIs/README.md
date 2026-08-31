@@ -13,6 +13,8 @@ This project was developed to transform analysis-level operational data into a s
 
 The objective is to replace manual calculations and pivot-table-based reporting with a scalable Power BI solution that automatically updates performance indicators when new data is loaded.
 
+https://github.com/user-attachments/assets/58ebd7dd-fc68-4eab-b57e-e19e7d91ac34
+
 It improves:
 
 - Calculation consistency
