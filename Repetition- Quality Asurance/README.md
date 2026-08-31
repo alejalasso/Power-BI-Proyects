@@ -21,6 +21,14 @@ The dashboard helps answer questions such as:
 - Which products show repetitions related to manufacturing problems?
 - Which corrective actions are most frequently implemented?
 
+
+
+https://github.com/user-attachments/assets/2c129bfc-0e40-4971-90c0-df7f7381e7e7
+
+
+
+
+
 ---
 
 ## 2. What the Model Does
