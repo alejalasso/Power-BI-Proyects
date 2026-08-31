@@ -9,6 +9,9 @@ This project originated from an Excel heatmap I previously built using the Maps 
 The solution was therefore rebuilt in **Power BI** to create a more scalable and interactive monitoring system.
 
 
+https://github.com/user-attachments/assets/a19c5471-ac92-41f1-ae91-3e27d6260d3b
+
+
 The dashboard integrates:
 
 * Microbiological counts
