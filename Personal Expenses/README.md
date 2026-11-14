@@ -16,7 +16,7 @@ I started drawing the main visuals i want to have and so on the measures i need.
 
 ## 3. Solution Architecture
 
-The solution follows a simple structurated 
+The solution follows a structured schema
 
 ### Main Data Sources
 
@@ -27,8 +27,17 @@ The model uses the following logical tables:
 Contains the records of expenses that are updated each day through Power BI Service, from the OneDrive file. 
 
 #### Calendario
-Is the calendar table with "Year" and "Month" columns
+Is the calendar table.
 
+### Measures
+
+- Total Expenses
+- Average month Expenses
+- Total Expenses last month
+- Total Expenses previous month
+
+- KPI Total Snack Expenses 
+- KPI Total Food Expenses 
 
 ## Model
 <img width="578" height="393" alt="image" src="https://github.com/user-attachments/assets/dfa53506-f60f-4b56-bf74-7c457e5ec370" />
