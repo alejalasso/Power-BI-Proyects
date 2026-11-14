@@ -2,6 +2,39 @@
 
 ## 1. Dashboard Purpose
 
-Is a personal project to track my monthly household expenses while living in Uruguay. It has a detailed view of my expenses separating into different categories such as "apartment expenese" that include rent andservices,"cats expenses", "food" and "snacks". Also, track expenses of each product individually. For example, how much am I spending on milk each month?
+Is a personal project to track my monthly household expenses while living in Uruguay. It has a detailed view of my expenses separating into different categories such as "apartment expenese" that include rent andservices,"cats expenses", "food" and "snacks". 
+Also, track expenses of each product individually. For example, how much am I spending on milk each month?
+
+
+## 2. What the Model Does
+
+The model combines the expenses records and a calendar table to calculate expenses by month.
+
+I started drawing the main visuals i want to have and so on the measures i need. Then, i translate that to Power BI
+<img width="737" height="481" alt="image" src="https://github.com/user-attachments/assets/50a51677-86f7-481f-b246-44cc760a953d" />
+
+
+## 3. Solution Architecture
+
+The solution follows a simple structurated 
+
+### Main Data Sources
+
+The model uses the following logical tables:
+
+#### Consulta
+
+Contains the records of expenses that are updated each day through Power BI Service, from the OneDrive file. 
+
+#### Calendario
+Is the calendar table with "Year" and "Month" columns
+
+
+## Model
+<img width="578" height="393" alt="image" src="https://github.com/user-attachments/assets/dfa53506-f60f-4b56-bf74-7c457e5ec370" />
+
+## Power BI report
+<img width="847" height="475" alt="image" src="https://github.com/user-attachments/assets/393a720d-4fe6-4106-82ab-e70dd6932c94" />
+
 
 
