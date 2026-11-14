@@ -27,7 +27,7 @@ The model uses the following logical tables:
 Contains the records of expenses that are updated each day through Power BI Service, from the OneDrive file. 
 
 #### Calendario
-Is the calendar table.
+Is the calendar table that supports time-based analysis such as monthly trends.
 
 ### Measures
 
