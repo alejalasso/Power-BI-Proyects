@@ -2,8 +2,10 @@
 
 ## 1. Dashboard Purpose
 
-Is a personal project to track my monthly household expenses while living in Uruguay. It has a detailed view of my expenses separating into different categories such as "apartment expenese" that include rent andservices,"cats expenses", "food" and "snacks". 
+Is a personal project to track my monthly household expenses while living in Uruguay. It has a detailed view of my expenses separating into different categories such as "apartment expenese" that include rent and services, "cats expenses", "food" and "snacks". 
 Also, track expenses of each product individually. For example, how much am I spending on milk each month?
+
+With this project I achieved to have better control over my monthly spending, especially on food and snacks.
 
 
 ## 2. What the Model Does
