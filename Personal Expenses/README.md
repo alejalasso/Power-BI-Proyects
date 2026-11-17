@@ -24,9 +24,9 @@ The solution follows a structured schema
 
 The model uses the following logical tables:
 
-#### Consulta
+#### Expenses_records
 
-Contains the records of expenses that are updated each day through Power BI Service, from the OneDrive file. 
+Contains the records of expenses that are updated each day through Power BI Service, from the OneDrive file through the reading of receipts of Power Automate. 
 
 #### Calendario
 Is the calendar table that supports time-based analysis such as monthly trends.
@@ -35,11 +35,14 @@ Is the calendar table that supports time-based analysis such as monthly trends.
 
 - Total Expenses
 - Average month Expenses
-- Total Expenses last month
+- Total Expenses from the last month
 - Total Expenses previous month
 
 - KPI Total Snack Expenses 
 - KPI Total Food Expenses 
+
+- Targ food: target monthly food expenses expected as maximum
+- Targ snack: target monthly snack expenses  expected as maximum 
 
 ## Model
 <img width="578" height="393" alt="image" src="https://github.com/user-attachments/assets/dfa53506-f60f-4b56-bf74-7c457e5ec370" />
