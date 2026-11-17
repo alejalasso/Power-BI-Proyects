@@ -45,7 +45,8 @@ Is the calendar table that supports time-based analysis such as monthly trends.
 - Targ snack: target monthly snack expenses  expected as maximum 
 
 ## Model
-<img width="578" height="393" alt="image" src="https://github.com/user-attachments/assets/dfa53506-f60f-4b56-bf74-7c457e5ec370" />
+<img width="788" height="437" alt="image" src="https://github.com/user-attachments/assets/431a58dd-3b1b-4cab-8e4e-997de220e27c" />
+
 
 ## Power BI report
 <img width="847" height="475" alt="image" src="https://github.com/user-attachments/assets/393a720d-4fe6-4106-82ab-e70dd6932c94" />
