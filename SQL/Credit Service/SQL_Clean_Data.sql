@@ -5,7 +5,19 @@ USE creditdb;
 SELECT*
 FROM `dataset prueba`;
 
--- I duplicate the table and add a column called "row_num" where i identify the duplicates
+-- I identify how many duplicates are
+WITH checkdup AS (
+SELECT *,
+ROW_NUMBER() OVER (
+PARTITION BY TRANSACTION_ID, ITEM_ID, CONTRACT_ID, SALE_REGISTRATION_DATE, ITEM, LOCALITY, 
+NEIGHBORHOOD, SUBCATEGORY, MERCHANT_NAME, BRANCH_MERCHANT, SELLER_NAME, CANAL_CONSOLIDADO, 
+LINEA_NEGOCIO, NUMBER_OF_INSTALLMENTS, TOTAL_VALUE, CURRENT_STATUS) AS row_num
+FROM `dataset prueba`)
+SELECT*
+FROM checkdup
+WHERE row_num >1;
+
+-- I duplicate the table and add the data and a column called "row_num" where i identified the duplicates
 
 CREATE TABLE dataset_prueba_c (
   `TRANSACTION_ID` text,
@@ -26,13 +38,6 @@ CREATE TABLE dataset_prueba_c (
   `CURRENT_STATUS` text,
   `row_num` INT
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
-
-SELECT *,
-ROW_NUMBER() OVER (
-PARTITION BY TRANSACTION_ID, ITEM_ID, CONTRACT_ID, SALE_REGISTRATION_DATE, ITEM, LOCALITY, 
-NEIGHBORHOOD, SUBCATEGORY, MERCHANT_NAME, BRANCH_MERCHANT, SELLER_NAME, CANAL_CONSOLIDADO, 
-LINEA_NEGOCIO, NUMBER_OF_INSTALLMENTS, TOTAL_VALUE, CURRENT_STATUS) AS row_num
-FROM `dataset prueba`;
 
 INSERT INTO dataset_prueba_c
 SELECT *,
@@ -124,7 +129,7 @@ ORDER BY 1;
 
 -- I check again with the changes in LINEA_NEGOCIO and CANAL_CONSOLIDADO if there is duplicates. And new duplicates not were found.
 
-WITH dupplicatecheck as (
+WITH duplicatecheck as (
 SELECT *,
 ROW_NUMBER() OVER (
 PARTITION BY TRANSACTION_ID, ITEM_ID, CONTRACT_ID, SALE_REGISTRATION_DATE, LOCALITY, 
@@ -133,7 +138,7 @@ LINEA_NEGOCIO, NUMBER_OF_INSTALLMENTS, TOTAL_VALUE, CURRENT_STATUS) AS rownum2
 FROM dataset_prueba_c)
 
 SELECT *
-FROM dupplicatecheck
+FROM duplicatecheck
 WHERE rownum2 > 1;
 
 -- I have to change the SALE_REGISTRATION_DATE to a valid Date-Time
