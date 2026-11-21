@@ -49,7 +49,8 @@ Is the calendar table that supports time-based analysis such as monthly trends.
 
 
 ## Power BI report
-<img width="847" height="475" alt="image" src="https://github.com/user-attachments/assets/393a720d-4fe6-4106-82ab-e70dd6932c94" />
+<img width="739" height="414" alt="image" src="https://github.com/user-attachments/assets/d790391e-43b6-4bf9-90da-0ec1e4cd276f" />
+
 
 
 
